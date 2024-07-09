@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+  list-style: none;
+  text-align: center;
+  font-family: "Anonymous Pro", monospace;
+}
+body {
+  background: #1c2841;
+}
+.filter-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+input {
+  background: transparent;
+  margin: 20px auto;
+  display: block;
+  font-size: 2.2rem;
+  text-align: left;
+  transition: 0.2s;
+  line-height: 80px;
+  padding: 0 30px;
+  border-radius: 10px;
+  border: 2px solid #f0ffff;
+}
+input:focus {
+  background: rgb(238, 238, 238);
+}
+.range-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="range"] {
+  width: 250px;
+  margin: 0 10px 10px 0;
+}
+.range-container span {
+  font-size: 1.2rem;
+  transform: translateY(-3px);
+}
+
+img {
+  border-radius: 15px;
+  margin: 4px auto 0;
+  height: 100px;
+  width: 160px;
+  box-shadow: 0 2px 6px rgba(51, 51, 51, 0.652); 
+}
+
+ul {
+  display: flex; /* display: flex , flex-wrap: wrap et flex: 1 0 30% permettent le responsive des li peut importe la largeur sans faire de media query */
+  flex-wrap: wrap;
+}
+
+em {
+  display: block; /*centrer le h2*/
+  color: #16d9e7;
+}
+
+li{
+  flex: 1 0 30%; /*permet de rendre le li responsive: mettre 1 0 puis % de la carte*/
+  border: 1px salmon solid;
+  margin: 10px; 
+  background: #fff2e1;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px rgba(51, 51, 51, 0.192);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 350px; /*Définir une largeur au li*/
+}
+
+button {
+cursor: pointer;
+border:none;
+background: #003366;
+color: aliceblue;  /*Couleur du texte*/
+width: 150px;
+padding: 10px 0; /* 10px entre le texte à l'intérieur et le haut du bouton, 10px entre le texte à l'intérieur et le bas du bouton. Donc le bouton grossis. */
+border-radius: 50px;
+font-weight: bold;    /*mise en gras*/
+margin: 5px; 
+transition: 0.25s;
+box-shadow: 0 1px 10px rgba(0, 0, 0, 0.603);
+}
+
+button:hover {
+transform: translateX(4px);
+}
+
+button:active {
+  transform: scale(1.3);     /*Le boutton Valider grossis le temps du click de l'user*/
+}
